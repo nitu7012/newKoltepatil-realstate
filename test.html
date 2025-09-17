@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot-N Image Carousel</title>
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bot-n-image-carousel .bot-n-image-item img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        /* Optional: customize navigation arrows */
+        .owl-nav button {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+        }
+
+        .owl-nav button:hover {
+            background: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="owl-carousel bot-n-image-carousel">
+        <div class="bot-n-image-item"><img src="./assest/img/First-Search-Dsk2.jpg" alt="Slide 1"></div>
+        <div class="bot-n-image-item"><img src="./assest/img/GodrejRiverinedsk.jpg" alt="Slide 2"></div>
+        
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".bot-n-image-carousel").owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: true
+            });
+        });
+    </script>
+
+</body>
+</html>

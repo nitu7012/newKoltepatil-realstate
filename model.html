@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Form</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --black: #444444;
+            --darkblue: #d6b46d;
+            --darkblue1: #dbb052;
+            --lightblue: #f1f9f9;
+            --radius: 12px;
+        }
+
+        .modal-content {
+            border-radius: var(--radius);
+            padding: 1rem;
+            background: var(--lightblue);
+        }
+
+        .modal-header {
+            border-bottom: none;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+
+        /* Popup Form */
+        .bot-n-all-pop-form {
+            max-width: 420px;
+            margin: 30px auto;
+            background: var(--lightblue);
+            border-radius: var(--radius);
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        .bot-n-all-pop-form .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            background: var(--black);
+            color: var(--lightblue);
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bot-n-all-pop-form .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bot-n-all-pop-form h4 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--black);
+        }
+
+        .bot-n-all-pop-form p {
+            text-align: center;
+            font-size: 14px;
+            color: var(--black);
+            margin-bottom: 20px;
+        }
+
+        .bot-n-all-pop-form .form-control {
+            border-radius: var(--radius);
+            border: 1px solid var(--darkblue1);
+            padding: 12px 40px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            background: var(--lightblue);
+            color: var(--black);
+        }
+
+        .bot-n-all-pop-form .form-group {
+            position: relative;
+        }
+
+        .bot-n-all-pop-form .form-group i {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: var(--black);
+        }
+
+        .bot-n-all-pop-form .btn-submit {
+            background: linear-gradient(45deg, var(--darkblue), var(--darkblue1));
+            color: var(--lightblue);
+            border-radius: var(--radius);
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            margin-bottom: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .bot-n-all-pop-form .btn-submit:hover {
+            opacity: 0.9;
+        }
+
+        .bot-n-all-pop-form .promise {
+            text-align: center;
+        }
+
+        .bot-n-all-pop-form .promise h6 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--black);
+        }
+
+        .bot-n-all-pop-form .promise-icons {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .bot-n-all-pop-form .promise-icons .item {
+            flex: 1;
+            padding: 0 8px;
+        }
+
+        .bot-n-all-pop-form .promise-icons img {
+            width: 45px;
+            margin-bottom: 8px;
+        }
+
+        .bot-n-all-pop-form .promise-icons p {
+            font-size: 13px;
+            margin: 0;
+            color: var(--black);
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal Form -->
+    <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="bot-n-all-pop-form">
+                    <!-- Close Button -->
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="Logo">
+                    </div>
+
+                    <!-- Title -->
+                    <h4>Get Priority Access & Exclusive Pricing</h4>
+                    <p>Create your account to explore exclusive property deals, track performance, and unlock smart
+                        investment tools.</p>
+
+                    <!-- Form -->
+                    <form id="offerForm">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-envelope"></i>
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-flag"></i>
+                            <input type="tel" class="form-control" placeholder="Enter Phone Number" required>
+                        </div>
+                        <button type="submit" class="btn-submit">Start Tour</button>
+                    </form>
+
+                    <!-- We Promise Section -->
+                    <div class="promise">
+                        <h6>We Promise</h6>
+                        <div class="promise-icons">
+                            <div class="item">
+                                <img src="./assets/img/instant.png" alt="Call Back">
+                                <p>Instant Call Back</p>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/price.png" alt="Price">
+                                <p>Unmatched Price</p>
+                            </div>
+                            <div class="item">
+                                <img src="./assets/img/vit.png" alt="Site Visit">
+                                <p>Free Site Visit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
