@@ -489,116 +489,117 @@
 
     <!-- location -->
     <!-- =========location======== -->
-    <section class="bot-n-location container" id="location">
-        <h3>Map Location</h3>
-        <div class="row g-3">
-            <!-- Left Map Image -->
-            <div class="col-lg-6">
-                <div class="location-map">
-                    <img src="./assest/img/map-1.png" alt="Satellite View">
-                </div>
-            </div>
+  <section class="bot-n-location container" id="location">
+  <h3>Map Location</h3>
+  <div class="row g-3">
+    <!-- Left Map Image -->
+    <div class="col-lg-6">
+      <div class="location-map">
+        <img src="./assest/img/map-1.png" alt="Satellite View">
+      </div>
+    </div>
 
-            <!-- Right Google Map -->
-            <div class="col-lg-6">
-                <div class="location-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8681300497824!2d-73.87003968459563!3d40.73755797932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e3e41b3dff9%3A0xe5bb3bcb4c1e09c3!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1615323789076!5m2!1sen!2sus"
-                        allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <p class="mt-2"><strong>Sapphire Square, Magarpatta City</strong><br>UAE – Area Near Mall of the
-                    Emirates</p>
-            </div>
+    <!-- Right Google Map -->
+    <div class="col-lg-6">
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8681300497824!2d-73.87003968459563!3d40.73755797932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e3e41b3dff9%3A0xe5bb3bcb4c1e09c3!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1615323789076!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <p class="mt-2"><strong>Life Republic, Hinjawadi, Pune</strong><br>
+         Just **4.5 KM** from Hinjawadi IT Hub · **13 KM** to Poddar School · **10 KM** to Aditya Birla Hospital · **25 KM** to Pune Railway Station · **6 KM** to Xion Mall · **10 KM** to Mumbai-Pune Expressway</p>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mt-4" id="bot-n-locationTabs" role="tablist">
+    <li class="nav-item">
+      <button class="nav-link active" id="schools-tab" data-bs-toggle="tab" data-bs-target="#schools"
+        type="button">Schools</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="metro-tab" data-bs-toggle="tab" data-bs-target="#metro"
+        type="button">Metro</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="airport-tab" data-bs-toggle="tab" data-bs-target="#airport"
+        type="button">Airport</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" id="itparks-tab" data-bs-toggle="tab" data-bs-target="#itparks"
+        type="button">IT Parks</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content distance-list" id="bot-n-locationTabContent">
+    <!-- Schools -->
+    <div class="tab-pane fade show active" id="schools" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Poddar School – 13 KM</div>
         </div>
-
-        <!-- Tabs -->
-        <ul class="nav nav-tabs mt-4" id="bot-n-locationTabs" role="tablist">
-            <li class="nav-item">
-                <button class="nav-link active" id="schools-tab" data-bs-toggle="tab" data-bs-target="#schools"
-                    type="button">Schools</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="metro-tab" data-bs-toggle="tab" data-bs-target="#metro"
-                    type="button">Metro</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="airport-tab" data-bs-toggle="tab" data-bs-target="#airport"
-                    type="button">Airport</button>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link" id="itparks-tab" data-bs-toggle="tab" data-bs-target="#itparks"
-                    type="button">IT Parks</button>
-            </li>
-        </ul>
-
-        <!-- Tab Content -->
-        <div class="tab-content distance-list" id="bot-n-locationTabContent">
-            <!-- Schools -->
-            <div class="tab-pane fade show active" id="schools" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Green Valley Residency, Wakad</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Sunshine Heights, Kharadi</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Palm Grove Apartments, Baner</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Lakeview Towers, Hinjewadi</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Metro -->
-            <div class="tab-pane fade" id="metro" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Metro Station A - 2 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Metro Station B - 5 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Metro Station C - 8 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Metro Station D - 10 km</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Airport -->
-            <div class="tab-pane fade" id="airport" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Pune Intl. Airport - 12 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Mumbai Intl. Airport - 140 km</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- IT Parks -->
-            <div class="tab-pane fade" id="itparks" role="tabpanel">
-                <div class="row g-3">
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Hinjewadi IT Park - 5 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">Magarpatta IT Park - 7 km</div>
-                    </div>
-                    <div class="col-md-3 col-6">
-                        <div class="distance-item">EON IT Park, Kharadi - 9 km</div>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Symbiosis Skills & Open University – 4 mins (approx)</div>
         </div>
-    </section>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Green Valley Residency, Wakad</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Lakeview Towers, Hinjewadi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metro -->
+    <div class="tab-pane fade" id="metro" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Nearest Metro - Proposed / Under Planning</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Metro Station B – 5 KM</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Metro Station C – 8 KM</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Metro Station D – 10 KM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Airport -->
+    <div class="tab-pane fade" id="airport" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Pune International Airport – ~20-25 KM</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Mumbai International Airport – ~140 KM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IT Parks -->
+    <div class="tab-pane fade" id="itparks" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Hinjawadi IT Park – 4.5 KM</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">Magarpatta IT Park – ~10-12 KM</div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="distance-item">EON IT Park, Kharadi – ~15-18 KM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- ==========location end -->
-     
+
     <!-- <section class="bot-n-hero-cont">
        
     </section> -->
