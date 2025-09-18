@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Social Reels Video Popup</title>
+<link rel="stylesheet" href="./assest/style/style.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+<style>
+/* Toggle buttons */
+.view-toggle button {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Cards */
+#propertyCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Grid view */
+#propertyCards.grid-view .col-md-12 {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+#propertyCards.grid-view .bot-n-card-property {
+    flex-direction: column;
+}
+#propertyCards.grid-view .bot-n-card-property img {
+    width: 100%;
+    height: auto;
+}
+
+/* List view */
+#propertyCards.list-view .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+#propertyCards.list-view .bot-n-card-property {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#propertyCards.list-view .bot-n-card-property img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+/* Card body */
+.bot-n-card-property {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+.bot-n-card-property-body {
+    padding: 10px 0;
+}
+.bot-n-card-property-details {
+    margin-top: 10px;
+}
+.bot-n-card-property-detail {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+.bot-n-card-property-detail:last-child {
+    border-bottom: none;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid propery" id="projects">
+    <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <h2 class="bot-title">Kolte Patil Properties In Pune</h2>
+            <!-- Toggle buttons -->
+            <div class="view-toggle">
+                <button id="gridView" class="btn btn-primary"><i class="fa fa-th-large"></i> Grid View</button>
+                <button id="listView" class="btn btn-outline-primary"><i class="fa fa-list"></i> List View</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="propertyCards">
+        <!-- Card 1 -->
+        <div class="col-md-12">
+            <div class="bot-n-card-property">
+                <img src="./assest/img/property-1.webp" alt="Kolte Patil Canvas">
+                <div class="bot-n-card-property-body">
+                    <h2>Kolte Patil Canvas</h2>
+                    <p>Check out Kolte Canvas in Hinjawadi, one of the upcoming under-construction housing societies
+                        in Pune West. There are apartments for sale in Kolte Canvas Hinjawadi, Pune.</p>
+                    <div class="bot-n-card-property-details">
+                        <div class="bot-n-card-property-detail">
+                            <small>Type</small><span>3, 3.5 & 4 BHK Apartments</span>
+                        </div>
+                        <div class="bot-n-card-property-detail">
+                            <small>Location</small><span>At Hinjawadi, Pune</span>
+                        </div>
+                        <div class="bot-n-card-property-detail">
+                            <small>Price</small><span>₹ 1.45 Cr* Onwards</span>
+                        </div>
+                    </div>
+                    <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Add other cards here as you have in your code... -->
+    </div>
+</div>
+
+<script>
+const propertyCards = document.getElementById('propertyCards');
+const gridBtn = document.getElementById('gridView');
+const listBtn = document.getElementById('listView');-
+
+gridBtn.addEventListener('click', () => {
+    propertyCards.classList.add('grid-view');
+    propertyCards.classList.remove('list-view');
+    gridBtn.classList.add('btn-primary');
+    gridBtn.classList.remove('btn-outline-primary');
+    listBtn.classList.add('btn-outline-primary');
+    listBtn.classList.remove('btn-primary');
+});
+
+listBtn.addEventListener('click', () => {
+    propertyCards.classList.add('list-view');
+    propertyCards.classList.remove('grid-view');
+    listBtn.classList.add('btn-primary');
+    listBtn.classList.remove('btn-outline-primary');
+    gridBtn.classList.add('btn-outline-primary');
+    gridBtn.classList.remove('btn-primary');
+});
+
+// Default: Grid view
+propertyCards.classList.add('grid-view');
+</script>
+</body>
+</html>

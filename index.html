@@ -15,7 +15,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <style>
 
+    </style>
 </head>
 
 <body>
@@ -31,11 +33,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="bot-n-new-kol-navbarNav">
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Book Site Visit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <ul class="navbar-nav ms-auto align-items-lg-center other-nav-bar">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social-reels">Flat Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
                     <li class="nav-item ms-lg-3 bot-n-num btn-dark-all">
                         <a href="tel:+919098098780">
                             <img src="./assest/img/call.svg" alt="Call"> +91 9098098780
@@ -51,15 +56,12 @@
         <div class="bot-n-hero-form-col">
             <div class="bot-n-hero-form">
                 <h5>Get Priority Access & Exclusive Pricing</h5>
-
-                <a href="tel:+919878988978" class="call-box">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        Call Us <br>
-                        <strong>+91 9878988978</strong>
-                    </div>
-                </a>
-
+                <div class="highlight-list">
+                    <div class="highlight-item">Exclusive Pre-Launch Pricing</div>
+                    <div class="highlight-item">Early Access Booking Window</div>
+                    <div class="highlight-item">Priority Inventory Selection</div>
+                    <div class="highlight-item">Possession by 2029</div>
+                </div>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fa-solid fa-building"></i></span>
                     <select name="sources1" id="sources1" class="form-control" required>
@@ -93,7 +95,7 @@
 
                 <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
 
-                <button class="btn btn-submit">Submit</button>
+                <button class="btn btn-submit" onclick="goToThankYou()">Submit</button>
 
                 <div class="site-visit-box">
                     <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="Visit">
@@ -103,9 +105,13 @@
                     </div>
                 </div>
 
-                <button class="btn btn-site-visit">
-                    Schedule a Free Site Visit <i class="fa-solid fa-arrow-right"></i>
-                </button>
+                <a href="tel:+919878988978" class="call-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        Call Us <br>
+                        <strong>+91 9878988978</strong>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -118,7 +124,7 @@
     </div>
     <!--end owl crowels  -->
     <!-- propety start -->
-    <div class="container-fluid propery">
+    <div class="container-fluid propery" id="projects">
         <div class="row">
             <div class="col-12">
                 <h2 class="bot-title">Kolte Patil Properties In Pune</h2>
@@ -129,42 +135,50 @@
                     <img src="./assest/img/property-1.webp" alt="Kolte Patil Canvas">
                     <div class="bot-n-card-property-body">
                         <h2>Kolte Patil Canvas</h2>
-                        <p>Upcoming housing society in Hinjawadi, Pune West with modern amenities and 3, 3.5 & 4 BHK
-                            apartments.</p>
+                        <p>Check out Kolte Canvas in Hinjawadi, one of the upcoming under-construction housing societies
+                            in Pune West. There are apartments for sale in Kolte Canvas Hinjawadi , Pune. This society
+                            will have all basic facilities and amenities to suit homebuyer’s needs and requirements.</p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>3, 3.5 & 4 BHK</span>
+                                <small>Type</small><span>3, 3.5 & 4 BHK Apartments</span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Hinjawadi, Pune</span>
+                                <small>Location</small><span>At Hinjawadi, Pune</span>
                             </div>
                             <div class="bot-n-card-property-detail">
                                 <small>Price</small><span>₹ 1.45 Cr* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <!-- Card 2 -->
                 <div class="bot-n-card-property">
-                    <img src="./assest/img/property-2.webp" alt="Kolte Patil Rainforest">
+                    <img src="./assest/img/property-2.webp" alt="Kolte Patil Qrious">
                     <div class="bot-n-card-property-body">
-                        <h2>Kolte Patil Rainforest</h2>
-                        <p>Luxury 2 & 3 BHK apartments with serene landscapes and premium amenities at Baner, Pune.</p>
+                        <h2>Kolte Patil Qrious</h2>
+                        <p>Kolte Patil QRIOUS is more than just a residential project – it’s a beautifully planned
+                            lifestyle destination in the heart of Hinjawadi. Designed with meticulous attention to
+                            detail, these intelligently laid-out homes offer the perfect blend of comfort, elegance, and
+                            affordability. Step into a home that feels like a royal retreat after a long day. Nestled
+                            away from the chaos, yet right in the city, QRIOUS gives you the best of both worlds –
+                            serene surroundings and seamless connectivity</p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>2 & 3 BHK</span>
+                                <small>Type</small><span>2 & 3 BHK Apartments</span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Baner, Pune</span>
+                                <small>Location</small><span>At Punawale</span>
                             </div>
                             <div class="bot-n-card-property-detail">
-                                <small>Price</small><span>₹ 95 L* Onwards</span>
+                                <small>Price</small><span>₹ 87 Lacs* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -172,23 +186,30 @@
             <div class="col-md-12">
                 <!-- Card 3 -->
                 <div class="bot-n-card-property">
-                    <img src="./assest/img/property-3.webp" alt="Kolte Patil Aspen">
+                    <img src="./assest/img/property-3.webp" alt="Kolte Patil Duet">
                     <div class="bot-n-card-property-body">
-                        <h2>Kolte Patil Aspen</h2>
-                        <p>Modern 1.5, 2 & 3 BHK apartments in Wakad with excellent connectivity and world-class
-                            amenities.</p>
+                        <h2>Kolte Patil Duet</h2>
+                        <p>Kolte Patil Duet at Hinjawadi, Pune is a premium residential project that redefines modern
+                            living with thoughtfully designed 2 BHK residences. Nestled within the vibrant township of
+                            Kolte Patil Life Republic Hinjawadi, Pune, the project combines luxury, comfort, and
+                            convenience for urban families. With spacious layouts, elegant interiors, and top-class
+                            specifications, Kolte Patil Duet at Hinjawadi ensures a lifestyle that blends sophistication
+                            with functionality. The project offers world-class Kolte Patil Duet amenities including
+                            landscaped gardens, clubhouse, gym, swimming pool, kids’ play areas, and ample open spaces
+                            that cater to every member of the family.</p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>1.5, 2 & 3 BHK</span>
+                                <small>Type</small><span>Only 2 BHK Apartment</span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Wakad, Pune</span>
+                                <small>Location</small><span>At Punawale</span>
                             </div>
                             <div class="bot-n-card-property-detail">
-                                <small>Price</small><span>₹ 85 L* Onwards</span>
+                                <small>Price</small><span>₹ 75 Lac* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -196,23 +217,31 @@
             <div class="col-md-12">
                 <!-- Card 4 -->
                 <div class="bot-n-card-property">
-                    <img src="./assest/img/property-4.webp" alt="Kolte Patil Laurel">
+                    <img src="./assest/img/property-4.webp" alt="Kolte Patil 24k Altura">
                     <div class="bot-n-card-property-body">
-                        <h2>Kolte Patil Laurel</h2>
-                        <p>Spacious 3 & 4 BHK apartments at Kothrud with modern designs and premium lifestyle amenities.
+                        <h2>Kolte Patil 24k Altura</h2>
+                        <p>Kolte Patil 24k Altura is an exquisite, secure gated community in the in-demand location of
+                            Mahalunge in Pune. The exquisite 3 tower elevation comprises 3 BHK and 4 BHK sleek
+                            apartments with wide decks. Enjoy sweeping views of the verdant surroundings and the Mula
+                            River right from your spacious decks. Utmost privacy and exclusive space is yours with only
+                            4 flats per floor. The availability of 4 lifts per floor allows smooth movement and
+                            navigation across various levels. It has 60% of the total space dedicated to amenities
+                            enhancing its appeal. There are a total of 3 Podium parking for a convenient vehicle parking
+                            experience.
                         </p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>3 & 4 BHK</span>
+                                <small>Type</small><span>3 & 4 BHK Apartments</span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Kothrud, Pune</span>
+                                <small>Location</small><span>At Baner, Pune</span>
                             </div>
                             <div class="bot-n-card-property-detail">
-                                <small>Price</small><span>₹ 2.2 Cr* Onwards</span>
+                                <small>Price</small><span>₹ 2.3 Cr* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -220,23 +249,30 @@
             <div class="col-md-12">
                 <!-- Card 5 -->
                 <div class="bot-n-card-property">
-                    <img src="./assest/img/property-5.webp" alt="Kolte Patil Zen">
+                    <img src="./assest/img/property-5.webp" alt="Kolte Patil 24k Manor">
                     <div class="bot-n-card-property-body">
-                        <h2>Kolte Patil Zen</h2>
-                        <p>Premium 2 & 3 BHK apartments with modern amenities and green landscapes at Hinjewadi, Pune.
+                        <h2>Kolte Patil 24k Manor</h2>
+                        <p>24K Manor is an architectural masterpiece by Kolte Patil Developers, redefining signature
+                            living in the heart of Pimple Nilakh. Offering luxurious 3 BHK and 4 BHK residences, this
+                            exclusive address blends timeless elegance, contemporary design, and thoughtfully curated
+                            spaces for the modern urban elite. Every residence is a testament to unmatched
+                            craftsmanship, premium finishes, and lifestyle-enhancing amenities.
                         </p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>2 & 3 BHK</span>
+                                <small>Type</small><span>3 & 4 BHK Apartments
+
+                                </span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Hinjewadi, Pune</span>
+                                <small>Location</small><span>At Pimple Nilakh, Pune</span>
                             </div>
                             <div class="bot-n-card-property-detail">
-                                <small>Price</small><span>₹ 1.25 Cr* Onwards</span>
+                                <small>Price</small><span>₹ 2.75 cr* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -244,23 +280,27 @@
             <div class="col-md-12">
                 <!-- Card 6 -->
                 <div class="bot-n-card-property">
-                    <img src="./assest/img/property-6.webp" alt="Kolte Patil Summit">
+                    <img src="./assest/img/property-6.webp" alt="Kolte Patil 24k Espada">
                     <div class="bot-n-card-property-body">
-                        <h2>Kolte Patil Summit</h2>
-                        <p>Exclusive 3 & 4 BHK apartments at Balewadi with luxurious amenities and excellent
-                            connectivity.</p>
+                        <h2>Kolte Patil 24k Espada</h2>
+                        <p>Welcome to 24K Espada, an urban cocoon of privacy and exclusivity. Located in well-connected
+                            Hinjawadi, it is part of a 400-acre integrated township. 24K Espada offers 4 & 5 bed premium
+                            row houses that are a global benchmark of design embodying the golden ratio concept.
+                            Next-gen technology, state-of-the-art specifications and premium amenities elevate your
+                            living experience at 24K Espada</p>
                         <div class="bot-n-card-property-details">
                             <div class="bot-n-card-property-detail border-bot">
-                                <small>Type</small><span>3 & 4 BHK</span>
+                                <small>Type</small><span>5 BHK Row House</span>
                             </div>
                             <div class="bot-n-card-property-detail border-bot mobile-border">
-                                <small>Location</small><span>Balewadi, Pune</span>
+                                <small>Location</small><span>At Hinjawadi Pune</span>
                             </div>
                             <div class="bot-n-card-property-detail">
-                                <small>Price</small><span>₹ 1.8 Cr* Onwards</span>
+                                <small>Price</small><span>₹ 3.55 Cr* Onwards</span>
                             </div>
                         </div>
-                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal" data-bs-target="#offerModal">Enquire Now</a>
+                        <a href="#" class="bot-n-card-property-button btn-dark-all" data-bs-toggle="modal"
+                            data-bs-target="#offerModal">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -271,47 +311,80 @@
     <!-- ===property end -->
     <!-- soiol -->
     <section class="bot-n-social container" id="social-reels">
-        <h3>Social Reels</h3>
-        <div class="owl-carousel owl-theme">
-            <!-- Card 1 -->
-            <div class="social-card" onclick="window.open('https://www.instagram.com/p/VIDEO_LINK1/', '_blank')">
+        <h3>Sample flat video</h3>
+
+        <div class="owl-carousel social-owl">
+            <div class="social-card" data-video="./assest/img/video1.mp4">
                 <video autoplay muted loop playsinline>
                     <source src="./assest/img/video1.mp4" type="video/mp4">
                 </video>
                 <div class="social-overlay">Luxury Villa Tour - Click to watch</div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="social-card" onclick="window.open('https://www.youtube.com/watch?v=VIDEO_LINK2', '_blank')">
+            <div class="social-card" data-video="./assest/img/video2.mp4">
                 <video autoplay muted loop playsinline>
                     <source src="./assest/img/video2.mp4" type="video/mp4">
                 </video>
-                <div class="social-overlay">Walkthrough Our Premium Apartments – Elegant Designs & Spacious Layouts
-                </div>
+                <div class="social-overlay">Walkthrough Our Premium Apartments</div>
             </div>
 
-            <!-- Card 3 -->
-            <div class="social-card" onclick="window.open('https://www.instagram.com/p/VIDEO_LINK3/', '_blank')">
+            <div class="social-card" data-video="./assest/img/real-video.mp4">
                 <video autoplay muted loop playsinline>
                     <source src="./assest/img/real-video.mp4" type="video/mp4">
                 </video>
-                <div class="social-overlay">Relax by the Pool – Highlighting the Best Amenities & Views</div>
+                <div class="social-overlay">Relax by the Pool</div>
             </div>
 
-            <!-- Card 4 -->
-            <div class="social-card" onclick="window.open('https://www.youtube.com/watch?v=VIDEO_LINK4', '_blank')">
+            <div class="social-card" data-video="./assest/img/video1.mp4">
                 <video autoplay muted loop playsinline>
                     <source src="./assest/img/video1.mp4" type="video/mp4">
                 </video>
-                <div class="social-overlay"> Lush Gardens & Community Spaces – Perfect for Families</div>
+                <div class="social-overlay">Luxury Villa Tour</div>
             </div>
-
-            <!-- Add more cards as needed -->
         </div>
     </section>
+
+    <!-- Video Popup -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-content">
+            <span class="close-btn" id="closeVideo">&times;</span>
+            <video id="popupVideo" controls></video>
+        </div>
+    </div>
+
+    <!-- Form Popup -->
+    <div id="formPopup" class="form-popup">
+        <div class="form-box">
+            <h3>Do you want to continue watching?</h3>
+            <p>Please fill this form to continue</p>
+            <form id="continueForm">
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="Enter Full Name">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <img src="https://flagcdn.com/w20/in.png" alt="IN Flag" style="width: 20px;">
+                    </span>
+                    <input type="tel" class="form-control" placeholder="Enter Phone Number">
+                    <span class="input-group-text"><i class="fa-solid fa-caret-down"></i></span>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="Enter your email (Optional)">
+                </div>
+
+                <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
+
+                <button class="btn" onclick="goToThankYou()">Submit</button>
+            </form>
+        </div>
+    </div>
     <!-- end sol -->
-       <!-- About Section -->
-    <section class="bot-n-about-realestate">
+    <!-- About Section -->
+    <section class="bot-n-about-realestate" id="about">
         <div class="container">
             <div class="row align-items-center g-4">
                 <!-- Left Image -->
@@ -414,59 +487,121 @@
         </div>
     </section>
 
-    <!-- contact -->
-    <section class="bot-n-hero-cont">
-        <div class="bot-n-hero-form-col">
-            <div class="bot-n-hero-form">
-                <h5>Get Priority Access & Exclusive Pricing</h5>
+    <!-- location -->
+    <!-- =========location======== -->
+    <section class="bot-n-location container" id="location">
+        <h3>Map Location</h3>
+        <div class="row g-3">
+            <!-- Left Map Image -->
+            <div class="col-lg-6">
+                <div class="location-map">
+                    <img src="./assest/img/map-1.png" alt="Satellite View">
+                </div>
+            </div>
 
-                <a href="tel:+919878988978" class="call-box">
-                    <i class="fa-solid fa-phone"></i>
-                    <div>
-                        Call Us <br>
-                        <strong>+91 9878988978</strong>
+            <!-- Right Google Map -->
+            <div class="col-lg-6">
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8681300497824!2d-73.87003968459563!3d40.73755797932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e3e41b3dff9%3A0xe5bb3bcb4c1e09c3!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1615323789076!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <p class="mt-2"><strong>Sapphire Square, Magarpatta City</strong><br>UAE – Area Near Mall of the
+                    Emirates</p>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mt-4" id="bot-n-locationTabs" role="tablist">
+            <li class="nav-item">
+                <button class="nav-link active" id="schools-tab" data-bs-toggle="tab" data-bs-target="#schools"
+                    type="button">Schools</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="metro-tab" data-bs-toggle="tab" data-bs-target="#metro"
+                    type="button">Metro</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="airport-tab" data-bs-toggle="tab" data-bs-target="#airport"
+                    type="button">Airport</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" id="itparks-tab" data-bs-toggle="tab" data-bs-target="#itparks"
+                    type="button">IT Parks</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content distance-list" id="bot-n-locationTabContent">
+            <!-- Schools -->
+            <div class="tab-pane fade show active" id="schools" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Green Valley Residency, Wakad</div>
                     </div>
-                </a>
-
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-building"></i></span>
-                    <select name="sources1" id="sources1" class="form-control" required>
-                        <option value="select">Choose Project</option>
-                        <option value="Kolte Patil Canvas">Kolte Patil Canvas</option>
-                        <option value="Kolte Patil Qrious">Kolte Patil Qrious</option>
-                        <option value="Kolte Patil Duet">Kolte Patil Duet</option>
-                        <option value="Kolte Patil 24k Altura">Kolte Patil 24k Altura</option>
-                        <option value="Kolte Patil 24k Manor">Kolte Patil 24k Manor</option>
-                        <option value="Kolte Patil 24k Espada">Kolte Patil 24k Espada</option>
-                    </select>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Sunshine Heights, Kharadi</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Palm Grove Apartments, Baner</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Lakeview Towers, Hinjewadi</div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="Enter Full Name">
+            <!-- Metro -->
+            <div class="tab-pane fade" id="metro" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station A - 2 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station B - 5 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station C - 8 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Metro Station D - 10 km</div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="input-group">
-                    <span class="input-group-text">
-                        <img src="https://flagcdn.com/w20/in.png" alt="IN Flag" style="width: 20px;">
-                    </span>
-                    <input type="tel" class="form-control" placeholder="Enter Phone Number">
-                    <span class="input-group-text"><i class="fa-solid fa-caret-down"></i></span>
+            <!-- Airport -->
+            <div class="tab-pane fade" id="airport" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Pune Intl. Airport - 12 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Mumbai Intl. Airport - 140 km</div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="input-group">
-                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                    <input type="email" class="form-control" placeholder="Enter your email (Optional)">
+            <!-- IT Parks -->
+            <div class="tab-pane fade" id="itparks" role="tabpanel">
+                <div class="row g-3">
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Hinjewadi IT Park - 5 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">Magarpatta IT Park - 7 km</div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="distance-item">EON IT Park, Kharadi - 9 km</div>
+                    </div>
                 </div>
-
-                <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
-
-                <button class="btn btn-submit">Submit</button>
-
-
             </div>
         </div>
     </section>
+    <!-- ==========location end -->
+     
+    <!-- <section class="bot-n-hero-cont">
+       
+    </section> -->
 
     <!-- About Section -->
     <div class="other-section">
@@ -589,7 +724,7 @@
                             <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" class="form-control" placeholder="Enter your email (Optional)">
                         </div>
-                        <button type="submit" class="btn-submit">Start Tour</button>
+                        <button type="submit" class="btn-submit" onclick="goToThankYou()">Start Tour</button>
                     </form>
 
                     <!-- We Promise Section -->
@@ -615,14 +750,50 @@
         </div>
     </div>
 
+    <!-- Mobile Bottom Navbar -->
+    <div class="mobile-bottom-nav">
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919158145429" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+        </a>
 
+        <!-- Contact (Call) -->
+        <a href="tel:+919158145429">
+            <i class="fas fa-phone"></i>
+            Call
+        </a>
+
+        <!-- Get Quote -->
+        <a href="#" data-bs-toggle="modal" data-bs-target="#botNModal">
+            <i class="fas fa-file-signature"></i>
+            Get Quote
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- model -->
+    <script>
+        const modal = document.getElementById('myModal'); // aapke modal ka ID
+        const openBtn = document.getElementById('openModal');
+        const closeBtn = document.getElementById('closeModal');
 
+        openBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+            document.body.classList.add('modal-open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.classList.remove('modal-open');
+        });
+
+    </script>
+    <!-- model end -->
     <script>
         $(document).ready(function () {
             $(".bot-n-image-carousel").owlCarousel({
@@ -660,6 +831,101 @@
         });
     </script>
 
+    <!-- nav -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const navbarCollapse = document.getElementById('bot-n-new-kol-navbarNav');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992) { // lg breakpoint se chhota = mobile
+                        new bootstrap.Collapse(navbarCollapse).hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- socila -->
+    <script>
+        $(document).ready(function () {
+            $('.social-owl').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                autoplay: false,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 4 }
+                }
+            });
+        });
+
+        const cards = document.querySelectorAll('.social-card');
+        const videoModal = document.getElementById('videoModal');
+        const popupVideo = document.getElementById('popupVideo');
+        const formPopup = document.getElementById('formPopup');
+        const continueForm = document.getElementById('continueForm');
+        const closeVideoBtn = document.getElementById('closeVideo');
+
+        let formTimer;
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                const videoSrc = card.dataset.video;
+                popupVideo.src = videoSrc;
+                videoModal.style.display = 'flex';
+                document.body.classList.add('modal-open');
+                popupVideo.play();
+
+                if (!localStorage.getItem('formSubmitted')) {
+                    formTimer = setTimeout(() => {
+                        formPopup.style.display = 'flex';
+                        popupVideo.pause();
+                    }, 5000);
+                }
+            });
+        });
+
+        continueForm.addEventListener('submit', e => {
+            e.preventDefault();
+            localStorage.setItem('formSubmitted', 'true');
+            formPopup.style.display = 'none';
+            popupVideo.play();
+        });
+
+        closeVideoBtn.addEventListener('click', closeVideo);
+
+        videoModal.addEventListener('click', e => {
+            if (e.target === videoModal) {
+                closeVideo();
+            }
+        });
+
+        function closeVideo() {
+            popupVideo.pause();
+            popupVideo.src = '';
+            videoModal.style.display = 'none';
+            formPopup.style.display = 'none';
+            document.body.classList.remove('modal-open');
+            clearTimeout(formTimer);
+        }
+
+        formPopup.addEventListener('click', e => {
+            if (e.target === formPopup) {
+                closeVideo();
+            }
+        });
+    </script>
+    <!-- btn -->
+    <script>
+        function goToThankYou() {
+            window.location.href = "thankyou.html";
+        }
+    </script>
 </body>
 
 </html>

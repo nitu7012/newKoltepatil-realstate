@@ -16,7 +16,20 @@
             --radius: 12px;
         }
 
+        /* Jab modal open ho to body pe ek class add hogi */
+        body.modal-open::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 999;
+        }
+
+        /* Modal box */
         .modal-content {
+            position: relative;
+            z-index: 1000;
             border-radius: var(--radius);
             padding: 1rem;
             background: var(--lightblue);
