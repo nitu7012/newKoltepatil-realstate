@@ -40,6 +40,7 @@
    }
 
    /* hero */
+
    .highlight-list {
        background: var(--gold-gradient);
        border-radius: var(--radius);
@@ -332,18 +333,25 @@
    }
 
    /* ---------- HERO SECTION ---------- */
+
    .bot-n-hero {
        position: relative;
        width: 100%;
-       min-height: 100vh;
-       background: url('../img/banner-1.webp') center/cover no-repeat;
        display: flex;
        align-items: flex-start;
        justify-content: flex-end;
-       padding: 120px 5% 40px;
+       overflow: visible;
+       min-height: 130vh;
+       padding-top: 4rem;
    }
 
-   /* Overlay effect */
+   .bg-slider .slide {
+       width: 100%;
+       height: 130vh;
+       background-size: cover;
+       background-position: center;
+   }
+
    .bot-n-hero::before {
        content: "";
        position: absolute;
@@ -352,22 +360,28 @@
        width: 100%;
        height: 100%;
        background: rgba(0, 0, 0, 0.3);
+       z-index: 1;
    }
 
-   /* FORM COLUMN */
+   /* ✅ form overlayed on image */
    .bot-n-hero-form-col {
-       position: relative;
+       position: absolute;
+       top: 6rem;
+       /* form thoda neeche se start hoga */
+       right: 20px;
+       /* right se 20px gap */
        z-index: 2;
        max-width: 400px;
        width: 100%;
-       margin-top: 0.5rem;
+       overflow-y: auto;
+       /* agar form lamba ho to scroll */
    }
 
    .bot-n-hero-form {
-       background: var(--white);
-       border-radius: var(--radius);
-       padding: 20px;
-       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+       background: #fff;
+       padding: 25px;
+       border-radius: 10px;
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
    }
 
    .bot-n-hero-form h5 {
@@ -493,8 +507,15 @@
            flex-direction: column;
            justify-content: flex-end;
            align-items: center;
-           padding: 120px 20px 30px;
-           min-height: 60vh;
+           min-height: 60vh !important;
+           margin: 0 !important;
+           padding: 0 !important;
+       }
+
+       .bg-slider .slide {
+           height: 60vh !important;
+           margin: 0 !important;
+           padding: 0 !important;
        }
 
        .bot-n-hero-form-col {
@@ -523,6 +544,7 @@
    /* owl crowsel  */
    .bot-n-image-carousel .owl-nav {
        display: none !important;
+       margin-top: 4rem !important;
    }
 
    .bot-n-image-carousel .bot-n-image-item img {
@@ -778,7 +800,7 @@
        position: relative;
        border-radius: var(--amenity-radius);
        overflow: hidden;
-       height: 250px;
+       height: 400px;
    }
 
    .amenity-card img {
@@ -1278,53 +1300,54 @@
            color: #292723 !important;
        }
    }
-/* location */
-.location-info {
-  background: #f9f9f9;
-  padding: 1.2rem 1.5rem;
-  border-radius: 10px;
-  border-left: 5px solid #493204; 
-  font-family: "Montserrat", sans-serif;
-  
-}
 
-.locain-des .project-name {
-  display: block;
-  font-size: 1.25rem;
-  color: #333;
-  margin-bottom: 0.6rem;
-}
+   /* location */
+   .location-info {
+       background: #f9f9f9;
+       padding: 1.2rem 1.5rem;
+       border-radius: 10px;
+       border-left: 5px solid #493204;
+       font-family: "Montserrat", sans-serif;
 
-.location-points {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+   }
 
-.location-points li {
-  padding: 0.4rem 0;
-  font-size: 0.95rem;
-  color: #555;
-  position: relative;
-  padding-left: 1.5rem;
-}
+   .locain-des .project-name {
+       display: block;
+       font-size: 1.25rem;
+       color: #333;
+       margin-bottom: 0.6rem;
+   }
 
-.location-points li::before {
-  content: "📍";
-  position: absolute;
-  left: 0;
-  color:#493204;
-}
+   .location-points {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+
+   .location-points li {
+       padding: 0.4rem 0;
+       font-size: 0.95rem;
+       color: #555;
+       position: relative;
+       padding-left: 1.5rem;
+   }
+
+   .location-points li::before {
+       content: "📍";
+       position: absolute;
+       left: 0;
+       color: #493204;
+   }
 
    .bot-n-location {
        padding: 2rem 40px;
        font-family: "Arial", sans-serif;
    }
 
-   
+
 
    .bot-n-location h3 {
        margin-bottom: 1rem;
@@ -1411,10 +1434,11 @@
        .bot-n-location .location-map {
            height: 220px;
        }
-       .location-points{
-        display: flex;
-        flex-direction: column !important;
-        flex-wrap: nowrap !important;
+
+       .location-points {
+           display: flex;
+           flex-direction: column !important;
+           flex-wrap: nowrap !important;
        }
    }
 
