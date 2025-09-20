@@ -81,75 +81,49 @@
     <section class="bot-n-hero">
         <!-- Background Slider -->
         <div class="bg-slider owl-carousel">
-            <div class="slide" style="background-image:url('./assest/img/banner-1.webp')"></div>
-            <div class="slide" style="background-image:url('./assest/img/hero.jpeg')"></div>
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
         </div>
+
 
         <!-- Right Side Form -->
         <div class="bot-n-hero-form-col">
-                <div class="bot-n-hero-form">
-                    <h5>Get Priority Access & Exclusive Pricing</h5>
-                    <div class="highlight-list">
-                        <div class="highlight-item">Exclusive Pre-Launch Pricing</div>
-                        <div class="highlight-item">Early Access Booking Window</div>
-                        <div class="highlight-item">Priority Inventory Selection</div>
-                        <div class="highlight-item">Possession by 2029</div>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="fa-solid fa-building"></i></span>
-                        <select class="form-control" required>
-                            <option value="">Choose Project</option>
-                            <option value="Kolte Patil Canvas">Kolte Patil Canvas</option>
-                            <option value="Kolte Patil Qrious">Kolte Patil Qrious</option>
-                        </select>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                        <input type="text" class="form-control" placeholder="Enter Full Name">
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-text">
-                            <img src="https://flagcdn.com/w20/in.png" alt="IN Flag" style="width: 20px;">
-                        </span>
-                        <input type="tel" class="form-control" placeholder="Enter Phone Number">
-                        <span class="input-group-text"><i class="fa-solid fa-caret-down"></i></span>
-                    </div>
-
-                    <div class="input-group">
-                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                        <input type="email" class="form-control" placeholder="Enter your email (Optional)">
-                    </div>
-
-                    <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
-
-                    <button class="btn btn-submit" onclick="goToThankYou()">Submit</button>
-
-                    <div class="site-visit-box">
-                        <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="Visit">
-                        <div>
-                            <strong>Book A Free Site Visit</strong><br>
-                            <small>Schedule at your convenience</small>
-                        </div>
-                    </div>
-
-                    <a href="tel:+919226931054" class="call-box">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            Call Us <br>
-                            <strong>+91 92269 31054</strong>
-                        </div>
-                    </a>
+            <div class="bot-n-hero-form">
+                <h5>Get Priority Access & Exclusive Pricing</h5>
+                <div class="highlight-list">
+                    <div class="highlight-item">Exclusive Pre-Launch Pricing</div>
+                    <div class="highlight-item">Early Access Booking Window</div>
+                    <div class="highlight-item">Priority Inventory Selection</div>
+                    <div class="highlight-item">Possession by 2029</div>
                 </div>
+
+                <div class="site-visit-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="Visit">
+                    <div data-bs-toggle="modal" data-bs-target="#offerModal">
+                        <strong>Book A Free Site Visit</strong><br>
+                        <small>Schedule at your convenience</small>
+                    </div>
+                </div>
+
+                <a href="tel:+919226931054" class="call-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        Call Us <br>
+                        <strong>+91 92269 31054</strong>
+                    </div>
+                </a>
             </div>
+        </div>
     </section>
 
     <!-- owl crousel -->
     <div class="owl-carousel bot-n-image-carousel">
-        <div class="bot-n-image-item"><img src="./assest/img/First-Search-Dsk2.jpg" alt="Slide 1"></div>
-        <div class="bot-n-image-item"><img src="./assest/img/GodrejRiverinedsk.jpg" alt="Slide 2"></div>
+        <div class="bot-n-image-item">
+            <img src="./assest/img/First-Search-Dsk2.jpg" alt="Slide 1">
+        </div>
+        <div class="bot-n-image-item">
+            <img src="./assest/img/GodrejRiverinedsk.jpg" alt="Slide 2">
+        </div>
 
     </div>
     <!--end owl crowels  -->
@@ -344,45 +318,33 @@
         <h3>Sample flat video</h3>
 
         <div class="owl-carousel social-owl">
-            <a href="https://youtube.com/shorts/EpwSc1faMh4?si=IXYeMkuAmNVJJkMP">
-                <div class="social-card">
-                    <video autoplay muted loop playsinline>
-                        <source src="./assest/img/video1.mp4" type="video/mp4">
-                    </video>
-                    <div class="social-overlay">Luxury Villa Tour - Click to watch</div>
-                </div>
-            </a>
 
-            <a href="https://youtube.com/shorts/6VPDXWgctTw?si=u4LilAvHjW6t7V3m">
-                <div class="social-card">
-                    <video autoplay muted loop playsinline>
-                        <source src="./assest/img/video2.mp4" type="video/mp4">
-                    </video>
-                    <div class="social-overlay">Walkthrough Our Premium Apartments</div>
-                </div>
-            </a>
+            <div class="social-card">
+                <iframe src="https://www.youtube.com/embed/EpwSc1faMh4?autoplay=1&mute=1&loop=1&playlist=EpwSc1faMh4"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="social-overlay">Luxury Villa Tour - Click to watch</div>
+            </div>
 
-            <a href="https://youtube.com/shorts/ZURBwa7KMz0?si=52e3t_Z6karenRKN">
-                <div class="social-card">
-                    <video autoplay muted loop playsinline>
-                        <source src="./assest/img/real-video.mp4" type="video/mp4">
-                    </video>
-                    <div class="social-overlay">Relax by the Pool</div>
-                </div>
-            </a>
+            <div class="social-card">
+                <iframe src="https://www.youtube.com/embed/6VPDXWgctTw?autoplay=1&mute=1&loop=1&playlist=6VPDXWgctTw"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="social-overlay">Walkthrough Our Premium Apartments</div>
+            </div>
 
-            <a href="https://youtube.com/shorts/6VmTsbV6D1E?si=_UhG_eka0VlVjvv3">
-                <div class="social-card">
-                    <video autoplay muted loop playsinline>
-                        <source src="./assest/img/video1.mp4" type="video/mp4">
-                    </video>
-                    <div class="social-overlay">Luxury Villa Tour</div>
-                </div>
-            </a>
+            <div class="social-card">
+                <iframe src="https://www.youtube.com/embed/ZURBwa7KMz0?autoplay=1&mute=1&loop=1&playlist=ZURBwa7KMz0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="social-overlay">Relax by the Pool</div>
+            </div>
+
+            <div class="social-card">
+                <iframe src="https://www.youtube.com/embed/6VmTsbV6D1E?autoplay=1&mute=1&loop=1&playlist=6VmTsbV6D1E"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <div class="social-overlay">Luxury Villa Tour</div>
+            </div>
+
         </div>
-
     </section>
-
     <!-- Video Popup -->
     <div id="videoModal" class="video-modal">
         <div class="video-content">
@@ -390,13 +352,12 @@
             <video id="popupVideo" controls></video>
         </div>
     </div>
-
     <!-- Form Popup -->
     <div id="formPopup" class="form-popup">
         <div class="form-box">
             <h3>Do you want to continue watching?</h3>
             <p>Please fill this form to continue</p>
-            <form id="continueForm">
+            <form id="continueForm" action="contact.php" method="post">
                 <div class="input-group">
                     <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
                     <input type="text" class="form-control" placeholder="Enter Full Name">
@@ -417,7 +378,7 @@
 
                 <p style="font-size:12px; color:#666;">100% Privacy Protected. We never share your details.</p>
 
-                <button class="btn" onclick="goToThankYou()">Submit</button>
+                <button class="btn" onclick="goToThankYou()" action="contact.php" method="post">Submit</button>
             </form>
         </div>
     </div>
@@ -548,8 +509,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- location -->
     <!-- =========location======== -->
     <section class="bot-n-location container" id="location">
@@ -561,29 +520,45 @@
                     <img src="./assest/img/map.jpeg" alt="Satellite View">
                 </div>
             </div>
-
+            <div class="col-md-6 col-12">
+                <div class="location-info mt-2">
+                    <p class="locain-des">
+                        <strong class="project-name">Kolte Patil Duet, Life Republic, Hinjawadi, Pune</strong>
+                    </p>
+                    <ul class="location-points">
+                        <div class="row">
+                            <div class="col-12">
+                                <li><strong>4-5 KM</strong> from Hinjawadi IT Park / Rajiv Gandhi Infotech Park</li>
+                            </div>
+                            <div class="col-12">
+                                <li><strong>6-7 KM</strong> to nearest hospital (e.g. significant multispecialty
+                                    hospital)
+                                </li>
+                            </div>
+                            <div class="col-12">
+                                <li><strong>1-2 KM</strong> to reputed schools & colleges in Wakad / Hinjawadi area</li>
+                            </div>
+                            <div class="col-12">
+                                <li><strong>5-6 KM</strong> to major mall / retail centre</li>
+                            </div>
+                            <div class="col-12">
+                                <li><strong>25-30 KM</strong> to Pune International Airport</li>
+                            </div>
+                            <div class="col-12">
+                                <li><strong>8-10 KM</strong> to Pune Railway Station</li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
             <!-- Right Google Map -->
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
                 <div class="location-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.8681300497824!2d-73.87003968459563!3d40.73755797932839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25e3e41b3dff9%3A0xe5bb3bcb4c1e09c3!2sForest%20Hills%2C%20Queens%2C%20NY!5e0!3m2!1sen!2sus!4v1615323789076!5m2!1sen!2sus"
                         allowfullscreen="" loading="lazy"></iframe>
                 </div>
-            </div>
-
-            <div class="location-info mt-2">
-                <p class="locain-des">
-                    <strong class="project-name">Kolte Patil Duet, Life Republic, Hinjawadi, Pune</strong>
-                </p>
-                <ul class="location-points">
-                    <li><strong>4-5 KM</strong> from Hinjawadi IT Park / Rajiv Gandhi Infotech Park</li>
-                    <li><strong>6-7 KM</strong> to nearest hospital (e.g. significant multispecialty hospital)</li>
-                    <li><strong>1-2 KM</strong> to reputed schools & colleges in Wakad / Hinjawadi area</li>
-                    <li><strong>5-6 KM</strong> to major mall / retail centre</li>
-                    <li><strong>25-30 KM</strong> to Pune International Airport</li>
-                    <li><strong>8-10 KM</strong> to Pune Railway Station</li>
-                </ul>
-            </div>
+            </div> -->
 
             <!-- Tabs -->
             <ul class="nav nav-tabs mt-4" id="bot-n-locationTabs" role="tablist">
@@ -750,6 +725,15 @@
 
             <!-- Disclaimer -->
             <div class="footer-bottom mt-4">
+                <div class="footer-left">
+                    <div class="logo-wrapp">
+                        <img src="./assest/img/kolte-logo.webp" alt="">
+                    </div>
+                    <div class="footer-right">
+                        <a href="./term.html" class="text-decoration-none">Terms & Conditions </a>
+                        <a href="./privcy.html" class="text-decoration-none">Privacy Policy</a>
+                    </div>
+                </div>
                 <p>
                     Disclaimer: The content provided on this website is for information purposes only and does not
                     constitute an offer to avail any service. The prices mentioned are subject to change without prior
@@ -757,11 +741,10 @@
                     website are for representation purposes only and may not reflect the actual properties accurately.
                     Please note that this is the official website of an authorized marketing partner.
                 </p>
-                <p>
-                    <a href="#" class="text-decoration-none">Disclaimer <span><a href="./term.html"
-                                class="text-decoration-none">Terms & Conditions </a></span>- <span><a
-                                href="./privcy.html" class="text-decoration-none">Privacy Policy</a></span></a>
-                </p>
+
+                <hr>
+                <a href="https://www.botmediadigital.com" class="text-decoration-none">© 2025 BotMedia Digital . All
+                    Rights Reserved.</a>
             </div>
         </div>
     </footer>
@@ -787,42 +770,68 @@
                         investment tools.</p>
 
                     <!-- Form -->
-                    <form id="offerForm">
+                    <form id="offerForm" action="contact.php" method="post">
                         <div class="input-group">
-                            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                            <input type="text" class="form-control" placeholder="Enter Full Name">
+                            <span class="input-group-text"><i class="fa-solid fa-building"></i></span>
+                            <select class="form-control" name="project" required>
+                                <option value="">Choose Project</option>
+                                <option value="Kolte Patil Canvas Pune-P:4908">Kolte Patil Canvas</option>
+                                <option value="Kolte Patil Qrious Pune-P:4908">Kolte Patil Qrious</option>
+                                <option value="Kolte Patil Duet Pune-P:4908">Kolte Patil Duet</option>
+                                <option value="Kolte Patil 24k Altura Pune-P:4908">Kolte Patil 24k Altura</option>
+                                <option value="Kolte Patil 24k Manor-P:4908">Kolte Patil 24k Manor</option>
+                                <option value="Kolte Patil 24k Espada-P:4908">Kolte Patil 24k Espada</option>
+                            </select>
                         </div>
 
                         <div class="input-group">
-                            <span class="input-group-text">
-                                <img src="https://flagcdn.com/w20/in.png" alt="IN Flag" style="width: 20px;">
-                            </span>
-                            <input type="tel" class="form-control" placeholder="Enter Phone Number">
-                            <span class="input-group-text"><i class="fa-solid fa-caret-down"></i></span>
+                            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" class="form-control" name="fullname" placeholder="Enter Full Name"
+                                required>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="https://flagcdn.com/w20/in.png" alt="IN Flag"
+                                    style="width:20px;"></span>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter Phone Number"
+                                required>
                         </div>
 
                         <div class="input-group">
                             <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                            <input type="email" class="form-control" placeholder="Enter your email (Optional)">
+                            <input type="email" class="form-control" name="email"
+                                placeholder="Enter your email (Optional)">
                         </div>
-                        <button type="submit" class="btn-submit" onclick="goToThankYou()">Start Tour</button>
+
+                        <button type="submit" class="btn-submit">Start Tour</button>
                     </form>
+
+
 
                     <!-- We Promise Section -->
                     <div class="promise">
                         <h6>We Promise</h6>
                         <div class="promise-icons">
                             <div class="item">
-                                <img src="./assest/img/instant.png" alt="Call Back">
-                                <p>Instant Call Back</p>
+                                <a href="tel:+919226931054" class="text-decoration-none">
+                                    <img src="./assest/img/instant.png" alt="Call Back">
+                                    <p>Instant Call Back</p>
+                                </a>
+
                             </div>
                             <div class="item">
-                                <img src="./assest/img/price.png" alt="Price">
-                                <p>Unmatched Price</p>
+                                <a href="tel:+919226931054" class="text-decoration-none">
+                                    <img src="./assest/img/price.png" alt="Price">
+                                    <p>Unmatched Price</p>
+                                </a>
+
                             </div>
                             <div class="item">
-                                <img src="./assest/img/vit.png" alt="Site Visit">
-                                <p>Free Site Visit</p>
+                                <a href="tel:+919226931054" class="text-decoration-none">
+                                    <img src="./assest/img/vit.png" alt="Site Visit">
+                                    <p>Free Site Visit</p>
+                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -834,13 +843,13 @@
     <!-- Mobile Bottom Navbar -->
     <div class="mobile-bottom-nav">
         <!-- WhatsApp -->
-        <a href="https://wa.me/919158145429" target="_blank">
+        <a href="https://wa.me/+9192269 31054" target="_blank">
             <i class="fab fa-whatsapp"></i>
             WhatsApp
         </a>
 
         <!-- Contact (Call) -->
-        <a href="tel:+919158145429">
+        <a href="tel:+91922269 31054">
             <i class="fas fa-phone"></i>
             Call
         </a>
@@ -856,6 +865,8 @@
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <!-- Owl Carousel JS -->
+    <!-- jQuery + Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- model -->
     <script>
@@ -1027,7 +1038,6 @@
             });
         });
     </script>
-    <!-- hero -->
     <script>
         $('.bg-slider').owlCarousel({
             items: 1,
@@ -1035,10 +1045,19 @@
             autoplay: true,
             autoplayTimeout: 4000,
             animateOut: 'fadeOut',
-            dots: false,
+            dots: true,  // enable dots
             nav: false
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 768) {
+                document.querySelector(".bg-slider .slide:nth-child(2)")
+                    .style.backgroundImage = "url('./assest/img/Mobile-banner.jpg')";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
